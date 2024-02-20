@@ -65,8 +65,6 @@ public class EmployeeServiceTest {
 		when(employeeRepository.findbyName(employeename)).thenReturn(employee);
 		assertEquals(employeename, employeeService.findbyName(employeename).getUserName());
 		
-		
-		
 	}
 
 }
