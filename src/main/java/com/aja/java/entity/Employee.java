@@ -1,7 +1,5 @@
 package com.aja.java.entity;
 
-import org.hibernate.annotations.GenericGenerator;
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,12 +12,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name="java_employee")
+@Entity(name="aja_employee")
 public class Employee {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO,generator = "native")
-	@GenericGenerator(name = "native")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	@Column
 	private String name;
@@ -32,7 +29,7 @@ public class Employee {
 	private String previousClient;
 	private Integer noOfDaysInBench;
 	private String technology;
-	private Integer phoneNumber;
+	private Long phoneNumber;
 	private String emailId;
 	private String currentAddress;
 	private String permanentAddress;
