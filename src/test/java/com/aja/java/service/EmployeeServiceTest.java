@@ -27,7 +27,7 @@ public class EmployeeServiceTest {
 //	public void test_saveEmployee() {
 //
 //		Employee employee = new Employee(4, "lavanya", "lavanya1", "lavanya12", "12-sep-2022", 44, "java developer",
-//				"kalyan", "oja", 45, "java", 849348, "lavanya@123", "gachibowli", "elr", "no");
+//				"kalyan", "oja", 45, "java", 849348l, "lavanya@123", "gachibowli", "elr", "no");
 //
 //		when(employeeRepository.save(employee)).thenReturn(employee);
 //		assertEquals(employee, employeeService.save(employee));
@@ -40,10 +40,10 @@ public class EmployeeServiceTest {
 		List<Employee> list = new ArrayList<>();
 
 		Employee employee = new Employee(1, "lavanya", "lavanya1", "lavanya12", "12-sep-2022", 44, "java developer",
-				"kalyan", "oja", 45, "java", 849348, "lavanya@123", "gachibowli", "elr", "no");
+				"kalyan", "oja", 45, "java", 849348l, "lavanya@123", "gachibowli", "elr", "no");
 
 		Employee employee1 = new Employee(2, "lavanya", "lavanya1", "lavanya12", "12-sep-2022", 44, "java developer",
-				"kalyan", "oja", 45, "java", 849348, "lavanya@123", "gachibowli", "elr", "no");
+				"kalyan", "oja", 45, "java", 849348l, "lavanya@123", "gachibowli", "elr", "no");
 
 		list.add(employee);
 		list.add(employee1);
@@ -57,7 +57,7 @@ public class EmployeeServiceTest {
 		List<Employee> list = new ArrayList<>();
 
 		Employee employee = new Employee(1, "lavanya", "lavanya", "lavanya12", "12-sep-2022", 44, "java developer",
-				"kalyan", "oja", 45, "java", 849348, "lavanya@123", "gachibowli", "elr", "no");
+				"kalyan", "oja", 45, "java", 849348l, "lavanya@123", "gachibowli", "elr", "no");
 		list.add(employee);
 		
 		String employeename="lavanya";
