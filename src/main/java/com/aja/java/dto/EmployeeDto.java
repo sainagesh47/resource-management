@@ -1,12 +1,6 @@
-package com.aja.java.entity;
-
-import org.hibernate.annotations.GenericGenerator;
-
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+package com.aja.java.dto;
+ 
+import org.springframework.web.multipart.MultipartFile;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,18 +8,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name="aja_employee")
-public class Employee {
-
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY,generator = "native")
-	@GenericGenerator(name = "native")
-	private Integer id;
-	@Column
+public class EmployeeDto {
+ 
 	private String name;
 	private String userName;
 	private String password;
-	private String employeeImage;
 	private String dateOfJoining;
 	private Integer noOfDaysInCurrentCompany;
 	private String designation;
@@ -38,4 +25,5 @@ public class Employee {
 	private String currentAddress;
 	private String permanentAddress;
 	private String laptopStatus;
+	
 }
