@@ -9,9 +9,10 @@ import com.aja.java.entity.Employee;
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 
-	@Query(value = "select * from `nagesh`.java_employee where name=:name", nativeQuery = true)
+	@Query(value = "select * from `nagesh`.aja_employee where name=:name", nativeQuery = true)
 	public Employee findbyName(String name);
 
 	public Employee findByEmailId(String email);
 
+	
 }
