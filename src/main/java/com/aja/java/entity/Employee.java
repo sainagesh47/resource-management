@@ -15,8 +15,6 @@ import lombok.NoArgsConstructor;
 @Entity(name="aja_employee")
 public class Employee {
 
-	
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
